@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{box-sizing: border-box; font-family: 'Poppins', 'Nanum Gothic', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+section{width: 100%; height: 100vh; background: rgb(234,185,255);
+  background: linear-gradient(0deg, rgba(234,185,255,1) 7%, rgba(34,193,195,1) 34%, rgba(172,223,138,1) 67%, rgba(183,223,134,1) 84%, rgba(255,222,111,1) 100%); position: relative;}
+section .wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
+section .wrap .top_icon{padding-bottom: 30px;}
+section .wrap .top_icon a{color: #fff; font-size: 130px;}
+section .wrap h2{font-size: 24px; letter-spacing: 2px; font-weight: 600; color: #fff; text-transform: uppercase; padding-bottom: 60px;}
+
+section .wrap p{font-size: 14px; color: #ccc; font-style: italic;}

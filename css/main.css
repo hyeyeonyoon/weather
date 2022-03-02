@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+/*
+font-family: 'Nanum Gothic', sans-serif;
+*/
+*{box-sizing: border-box; font-family: 'Poppins', 'Nanum Gothic', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+/* 사용자 설정 */
+#user_select{text-align: center;}
+#user_select h2{padding: 20px 0; background-color: rgb(138, 187, 105); color: #fff; font-size: 24px; line-height: 1;}
+#user_select .cities{padding: 20px 0 10px; display: flex; justify-content: center; flex-wrap: wrap;}
+#user_select .cities button{background-color: rgb(179, 219, 152); padding: 8px 16px; border: 1px solid rgb(179, 219, 152); border-radius: 4px; color: #fff; margin: 0 5px 10px; cursor: pointer; font-weight: 500;}
+
+#user_select .cities button:hover{background-color: rgb(154, 207, 118);}
+
+#user_select .search{width: 400px; margin: 0 auto; border: 1px solid rgb(138, 187, 105); border-radius: 4px; margin-bottom: 20px; font-weight: 600; display: flex; flex-wrap: wrap;overflow: hidden;}
+#user_select .search input{width: calc(100% - 120px); height: 40px; border: none; padding: 0 10px; outline-color: rgb(154, 207, 118);}
+#user_select .search button{width: 120px; height: 40px; border: none; background-color: rgb(179, 219, 152); color: #fff; outline-color: rgb(154, 207, 118); cursor: pointer;}
+
+#user_select .search button:hover{background-color: rgb(154, 207, 118);}
+
+
+/* 현재 날씨 정보 */
+#weather{width: 1200px; margin: 0 auto; padding: 20px 0 0; background-color: #ddd; border-radius: 8px;}
+#weather ul{display: flex; justify-content: center; flex-wrap: wrap;}
+#weather ul li{width: calc(100% / 3 - 20px); margin: 0 10px 20px; background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: inset 2px 2px 4px rgba(255,255,255,0.2), 2px 2px 4px rgba(0,0,0,0.2);}
+
+#weather ul li .top{padding: 20px 0; background-color: rgb(99, 206, 207); display: flex; align-items: center; color: #fff;}
+
+#weather ul li .top > div{width: 50%; padding: 0 20px;}
+
+#weather ul li .top .cur_icon{font-size: 60px; text-align: center;}
+
+#weather ul li .top .info{text-align: right;}
+#weather ul li .top .info .temp{font-size: 16px;}
+#weather ul li .top .info .temp .degree{font-size: 24px;}
+
+#weather ul li .top .info .interTemp{font-size: 13px;}
+#weather ul li .top .info .interTemp span{font-size: 15px;}
+
+#weather ul li .top .info h4{font-size: 24px;}
+
+#weather ul li .top .info .location{font-size: 16px; color: rgb(2, 134, 136);  font-weight: 500; padding-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#weather ul li .top .info .location .city{}
+#weather ul li .top .info .location .nation{}
+
+#weather ul li .bottom{padding: 10px 0; display: flex; justify-content: space-between; align-items: center;}
+#weather ul li .bottom > div{width: calc(100% / 3 - 20px); text-align: center; font-size: 14px; color: #555;}
+
+#weather ul li .bottom > div i{font-size: 18px; color: rgb(19, 166, 168);}
+
+#weather ul li .bottom > div p{line-height: 1.6;}
+
+
+@media (max-width:1199px){
+  #weather{width: 100%;}
+}
+
+@media (max-width:991px){
+  #weather ul li{width: calc(50% - 20px);}
+}
+
+@media (max-width:767px){
+  #weather ul li{width: calc(100% - 20px);}
+}
+
+@media (max-width:420px){
+  #user_select .search{width: 340px;}
+}
